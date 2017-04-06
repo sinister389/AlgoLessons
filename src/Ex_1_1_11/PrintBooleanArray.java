@@ -30,7 +30,7 @@ public class PrintBooleanArray {
         int K = 10;
         int L = 9;
         boolean [][] barray = new boolean[K][L];
-        // Рандомная генерация тестового массива
+        // Рандомная генерация тестового массива чуть поменяю
         for (int i = 0; i < K; i++)
             for (int j = 0; j < L; j++) barray[i][j]= StdRandom.bernoulli(.5);
         printBooleanArray(barray);
