@@ -20,7 +20,7 @@ public class Equal {
     }
 
     public static void main(String[] args) {
-        // Задача 1.1.3
+        // Задача 1.1.3 - проверка
         isEqual(args);
     }
 }
