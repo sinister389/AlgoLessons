@@ -7,16 +7,15 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Equal {
     public static void isEqual(String[] args) {
+        if (args.length!=3) {
+            StdOut.printf("The number of arguments is not equal to three");
+            return;
+        }
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
-        if (a == b) if (b == c) {
-            StdOut.println("Равны");
-            return;
-        }
-        ;
-        StdOut.println("Не равны");
-        return;
+        if ((a == b)&&(b == c)) StdOut.println("Равны");
+        else StdOut.println("Не равны");
     }
 
     public static void main(String[] args) {

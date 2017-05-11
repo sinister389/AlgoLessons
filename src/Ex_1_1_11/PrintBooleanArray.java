@@ -8,6 +8,10 @@ import edu.princeton.cs.algs4.StdRandom;
  */
 public class PrintBooleanArray {
     public static void printBooleanArray(boolean[][] array) {
+        if (array.length==0) {
+            StdOut.printf("Array is empty!");
+            return;
+        }
         int N = array.length;
         int M = array[0].length;
 

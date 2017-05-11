@@ -15,9 +15,8 @@ public class Histogram {
    */
     public static int[] histogram(int[] a, int M) {
         int[] b = new int [M];
-        //for (int i = 0; i < b.length; i++) b[i]=0;
-        for (int i = 0; i < M; i++)
-            for (int j = 0; j < a.length; j++) if (a[j] == i) b[i]++;
+        for (int i = 0; i < a.length; i++)
+            if ((a[i] < M)&&(a[i] >= 0)) b[a[i]]++;
         return b;
     }
 
